@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --darkGray: #333;
+    --gray: #BDBDBD;
+    --white: #fff;
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--white);
+}
+
+.wrapper {
+    padding: 1.5rem;
+}
+
+.header__title {
+    font-family: 'Inconsolata', monospace;
+    color: var(--darkGray);
+    letter-spacing: -0.1rem;
+    text-transform: uppercase;
+}
+
+.main__img {
+    padding: 0 1.25rem;
+    margin: 4rem 0 4rem 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.main__title {
+    margin-bottom: 1.875rem;
+    font-size: 48px;
+    color: var(--darkGray);
+}
+
+.main__description {
+    margin-bottom: 4.125rem;
+    font-size: 18px;
+    color: var(--darkGray);
+}
+
+.main__btn-back {
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 7.125rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    background: var(--darkGray);
+    border-style: none;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer p {
+    color: var(--gray);
+}
+
+.footer a {
+    font-weight: 700;
+    color: var(--gray);
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        padding: 2.5rem 4.8125rem;
+    }
+
+    .main {
+        margin: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7.375rem;
+    }
+
+    .main__img {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main__info {
+        width: 50%;
+    }
+
+    .main__title {
+        font-size: 64px;
+    }
+
+    .main__description {
+        font-size: 24px;
+    }
+
+    .main__btn-back {
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 0;
+    }
+}
